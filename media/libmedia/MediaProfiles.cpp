@@ -641,7 +641,7 @@ MediaProfiles::getInstance()
                     } else if (!strcmp(platform, "sdm660")) {
                         property_get("vendor.media.sdm660.version", value, "0");
                         if (atoi(value) == 1) {
-                            strlcpy(value, "/vendor/etc/media_profiles_sdm660_v1.xml",
+                            strlcpy(value, "/vendor/etc/media_profiles_V1_0.xml",
                                     PROPERTY_VALUE_MAX);
                         } else {
                             strlcpy(value, "/vendor/etc/media_profiles_vendor.xml",
