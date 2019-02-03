@@ -195,7 +195,7 @@ MediaCodecsXmlParser::MediaCodecsXmlParser(
             } else if (!strcmp(platform, "sdm660")) {
                 if (property_get("vendor.media.sdm660.version", value, "0") &&
                     (atoi(value) == 1)){
-                    strlcpy(file_path, "/vendor/etc/media_codecs_sdm660_v1.xml",
+                    strlcpy(file_path, "/vendor/etc/media_codecs.xml",
                             PROP_VALUE_MAX);
                 } else {
                     strlcpy(file_path, "/vendor/etc/media_codecs_vendor.xml",
